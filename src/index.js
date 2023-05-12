@@ -13,7 +13,7 @@ al servidor y dispongamos de conexión a tiempo real.
 const server = require('http').Server(app);
 const socketio = require('socket.io')(server);
 
-app.set('port', process.env.PORT || 3002);
+app.set('port', process.env.PORT || 3003);
 
 //Ejecutamos la función de sockets.js
 require('./sockets')(socketio);
